@@ -34,4 +34,4 @@ Installation guide of Java EE and Apache Tomcat 8.0 not included.
 4. Right Click your new project > Profile as... > Profile on Server > Select Tomcat Server, click next > Add your project to the configured side, if it isn't already.
 
 Eclipse will now load a new tab that will have the address http://localhost:8080/<your project here>/. 
-	
+You can type the same address into the address bar of your browser and it will also work.
