@@ -1,0 +1,37 @@
+GUIDE: How to create a simple HTML Project on Eclipse EE for Tomcat server
+
+Installation guide of Java EE and Apache Tomcat 8.0 not included.
+
+1. File > New > Dynamic Web project
+
+	Target runtime > Your version of Tomcat you're running
+	Latest Dynamic web module version
+	Default configuration for Apache Tomcat
+	
+2. You'll now have a folder of the name you inputted with the following options:
+
+	2a. Deployment Descriptor: <your project name>
+		Everything here lets the server know everything about your server. More information later . . .
+	2b. JAX-WS Web Services
+		Don't worry about this one.
+	2c. Java Resources
+		Where you'll be doing anything java related here. Mainly servlets go here as well.
+	2d. Javascript Resources
+		Javascript files, if you have any.
+	2e. build
+		Don't worry about this one.
+	2f. Webcontent
+		Where your HTML, and subsequently, the heart of your web pages goes here. There are two important folders to guide the server:
+		2g. META-INF
+			This folder helps name the path you would like for your webcontent [e.g localhost8080:yourpath], this will be important.
+		2h. WEB-INF
+			This folder helps determine the server where to go for particular items in the context of your web page.
+		
+3. Right click Webcontent > New > New HTML File
+	Let's name this test.html.
+	For the title, let's leave it as a simple Hello World! and save the file.
+	
+4. Right Click your new project > Profile as... > Profile on Server > Select Tomcat Server, click next > Add your project to the configured side, if it isn't already.
+
+Eclipse will now load a new tab that will have the address http://localhost:8080/<your project here>/. 
+	
